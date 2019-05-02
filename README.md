@@ -15,16 +15,21 @@ The arguments are destructured, but incorrectly. It appears as if the first dest
 ### CLJ Compiled
 
 ```
-clj -m cljs.main --target node --output-to out/test.js -co '{:static-fns true}' -c io.axrs.shadow-destructure-issue-test &&
+clj -m cljs.main --target node --output-to out/test.js -co '{:static-fns true}' -c io.axrs.shadow-destructure-issue-test 
 node out/test.js
 ```
 
 ### Shadow-cljs
 
-`npm install && npx shadow-cljs watch test`
+```
+npm install 
+npx shadow-cljs watch test
+```
 
 ### CLJSBuild
 
-`lein cljsbuild once test`
+```
+lein cljsbuild once test
+```
 
 Open `resources/public/index.html` and check the console
