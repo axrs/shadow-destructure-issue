@@ -1,0 +1,5 @@
+{:source-paths ["test"]
+ :dependencies []
+ :builds       {:test {:target    :node-test
+                       :output-to "out/node-tests.js"
+                       :autorun   true}}}
