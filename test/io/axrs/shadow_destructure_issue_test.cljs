@@ -10,3 +10,4 @@
     (is (= 1 (f 1)))
     (is (= 1 (f 1 2))))
   (let []))
+(cljs.test/run-tests)
